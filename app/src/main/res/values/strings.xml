@@ -16,4 +16,5 @@
     <string name="key_sum">+</string>
     <string name="key_subtraction">-</string>
     <string name="key_result">=</string>
+    <string name="key_C">C</string>
 </resources>
