@@ -8,11 +8,9 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
     private TextView text;
-    private Button butt_1, butt_2, butt_3, butt_4,
-                   butt_5, butt_6, butt_7, butt_8,
-                   butt_9, butt_0;
+    private final int[] numberButtonIds = new int[]{R.id.butt0, R.id.butt1, R.id.butt2, R.id.butt3,
+            R.id.butt4, R.id.butt5, R.id.butt6, R.id.butt7, R.id.butt8, R.id.butt9};
 
 
     @Override
@@ -21,16 +19,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         text = findViewById(R.id.text);
-        butt_1 = findViewById(R.id.butt1);
-        butt_2 = findViewById(R.id.butt2);
-        butt_3 = findViewById(R.id.butt3);
-        butt_4 = findViewById(R.id.butt4);
-        butt_5 = findViewById(R.id.butt5);
-        butt_6 = findViewById(R.id.butt6);
-        butt_7 = findViewById(R.id.butt7);
-        butt_8 = findViewById(R.id.butt8);
-        butt_9 = findViewById(R.id.butt9);
-        butt_0 = findViewById(R.id.butt0);
+
+        Button[] buttons = null;
+        buttons[0] = findViewById(numberButtonIds[0]);
+        buttons[1] = findViewById(numberButtonIds[1]);
+        buttons[2] = findViewById(numberButtonIds[2]);
+        buttons[3] = findViewById(numberButtonIds[3]);
+        buttons[4] = findViewById(numberButtonIds[4]);
+        buttons[5] = findViewById(numberButtonIds[5]);
+        buttons[6] = findViewById(numberButtonIds[6]);
+        buttons[7] = findViewById(numberButtonIds[7]);
+        buttons[8] = findViewById(numberButtonIds[8]);
+        buttons[9] = findViewById(numberButtonIds[9]);
 
         View.OnClickListener OnClickListener = new View.OnClickListener() {
             @Override
@@ -70,16 +70,23 @@ public class MainActivity extends AppCompatActivity {
             }
         };
 
-        butt_1.setOnClickListener(OnClickListener);
-        butt_2.setOnClickListener(OnClickListener);
-        butt_3.setOnClickListener(OnClickListener);
-        butt_4.setOnClickListener(OnClickListener);
-        butt_5.setOnClickListener(OnClickListener);
-        butt_6.setOnClickListener(OnClickListener);
-        butt_7.setOnClickListener(OnClickListener);
-        butt_8.setOnClickListener(OnClickListener);
-        butt_9.setOnClickListener(OnClickListener);
-        butt_0.setOnClickListener(OnClickListener);
+        for (int id = 0; id < buttons.length; id++) {
+            buttons[id].setOnClickListener(OnClickListener);
+        }
+// Хотел эту простыню упаковать в цикл, но уже все глаза сломал не понимаю как это сделать!!
+// сам массив не могу обьявить перед методом OnCreate.
+
+
+//        butt1.setOnClickListener(OnClickListener);
+//        butt2.setOnClickListener(OnClickListener);
+//        butt3.setOnClickListener(OnClickListener);
+//        butt4.setOnClickListener(OnClickListener);
+//        butt5.setOnClickListener(OnClickListener);
+//        butt6.setOnClickListener(OnClickListener);
+//        butt7.setOnClickListener(OnClickListener);
+//        butt8.setOnClickListener(OnClickListener);
+//        butt9.setOnClickListener(OnClickListener);
+//        butt0.setOnClickListener(OnClickListener);
     }
 
 }
