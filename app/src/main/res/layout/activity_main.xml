@@ -7,14 +7,13 @@
     android:gravity="center"
     tools:context=".MainActivity">
 
+
     <TextView
         android:id="@+id/text"
         android:layout_width="match_parent"
-        android:layout_height="72dp"
-        android:gravity="center"
-        android:text="Test"
+        android:layout_height="@dimen/TextViewHeight"
+        android:gravity="right"
         android:textSize="@dimen/text_view_size" />
-
 
     <GridLayout
         android:id="@+id/key_board"
@@ -27,116 +26,83 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/butt1"
             style="@style/OptionButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="@string/key_1" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/butt2"
             style="@style/OptionButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="@string/key_2" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/butt3"
             style="@style/OptionButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="@string/key_3" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/division"
             style="@style/OptionButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="@string/key_split" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/butt4"
             style="@style/OptionButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="@string/key_4" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/butt5"
             style="@style/OptionButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="@string/key_5" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/butt6"
             style="@style/OptionButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="@string/key_6" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/multiply"
             style="@style/OptionButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="@string/key_multiply" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/butt7"
             style="@style/OptionButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="@string/key_7" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/butt8"
             style="@style/OptionButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="@string/key_8" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/butt9"
             style="@style/OptionButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="@string/key_9" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/plus"
             style="@style/OptionButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="@string/key_sum" />
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/butt0"
-            style="@style/OptionButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/key_0" />
-
-        <com.google.android.material.button.MaterialButton
-            style="@style/OptionButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/key_dot" />
-
-
-        <com.google.android.material.button.MaterialButton
-            style="@style/OptionButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/key_result" />
-
-        <com.google.android.material.button.MaterialButton
-            style="@style/OptionButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/key_subtraction" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/butt_C"
             style="@style/OptionButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="@string/key_C" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/butt0"
+            style="@style/OptionButtonStyle"
+            android:text="@string/key_0" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/equals"
+            style="@style/OptionButtonStyle"
+            android:text="@string/key_result" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/minus"
+            style="@style/OptionButtonStyle"
+            android:text="@string/key_subtraction" />
 
     </GridLayout>
 </FrameLayout>
